@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #d5dada;
+    /* font-family: 'Lato', sans-serif; */
+font-family: 'Poppins', sans-serif;
+color: black;
+
+    
+  
+    
+   
+}
+/* header part starts here */
+
+header{
+    
+    background: url(bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* opacity: 0.9; */
+}
+#nav_menu{
+    background-color: rgb(8, 8, 51);
+    /* opacity: 0.9; */
+}
+#nav_menu ul{
+    text-align: center;
+  
+
+}
+#nav_menu ul li{
+    display: inline-block;
+    padding: 20px 10px;
+    position: relative;
+}
+#nav_menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+#nav_menu ul li:hover {
+    background-color: #1919d1;
+    
+}
+#nav_menu ul ul{
+    text-align: center;
+    z-index: 999;
+    position: absolute;
+    top: 51px;
+    left: 5;
+    background-color: #2a045c;
+    width: 100%;
+    display: none;
+  
+}
+#nav_menu ul ul li{
+    display: block;
+    padding: 8px 10px;
+    
+   
+}
+#nav_menu ul li:hover ul{
+    display: block;
+    
+}
+#container{
+    height: 100vh;
+    text-align: center;
+}
+#bg-img h1{
+    font-family: 'Roboto Mono', monospace;
+    margin: 50px auto 10px;
+    background-color: #5959f1;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+}
+#bg-img .nav_p{
+    font-family: 'Roboto', sans-serif;
+    /* width: 70%;   */
+    /* display: inline-block; */
+    color: black;
+  
+}
+#aa{  
+   padding: 15px 30px;
+   margin: 300px 5px 0 0;
+   text-decoration: none;
+}
+#container input{   
+   padding: 15px 30px 15px 5px;
+   margin: 300px 0 0 5px;
+   border: none;
+}
+.btn{
+   
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: #5959f1;
+    color: white;
+   
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+/*-----=-=-=-=The main parts starts here =-=-=-=----*/
+#card_design{
+    display: flex;
+     
+    
+}
+
+.card{
+    width: 24%;
+    height: 300px;
+    background-color: #9f09bda6;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px black;
+    text-align: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.card .card_title{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    /* margin-top: 70px; */
+}
+.card .card_desc{
+    color: white;
+    font-style: italic;
+    font-size: small;
+}
+.card a{
+    text-decoration: none;
+    color: white;
+    background-color: #5959f1;
+    border-radius: 5px;
+    padding: 8px 14px;
+    margin: 25px;
+    /* position: absolute;
+    top: 248px;
+    left: 95px; */
+    display: block;
+}
+.cap{
+    color: white;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    padding: 15px;
+}
+/*---- table data ----*/
+
+.table_div .table{
+    padding: 10px 9px;
+    width: 60%;
+   margin: 20px auto;
+    height: 200px;
+}
+table, th, td{
+    border-collapse: collapse; 
+    border: 1px solid black;
+    text-align: center;
+}
+th{
+    background-color: #EE5A24;
+    padding: 10px;
+}
+tbody{
+    background-color: #a5b1c2;
+    color: black;
+}
+tr:hover td{
+    background-color: #57606f;
+    color: white;
+}
+th:hover{
+    background-color: #ff4757;
+    color: white;
+
+}
+/*---- table data ends----*/
+.about h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+hr{
+    border: 1px dotted #300930;
+    width: 80px;
+   margin: 5px auto;
+   border-bottom: none;
+   font-size: 5px;
+  
+}
+.about .about-desc{
+    text-align: justify;
+    width: 80%;
+    margin: 10px auto;
+}
+
+/*------ List item starts here ------*/
+
+#list-grup .list_div {
+    width: 49%;
+   display: flex; 
+   justify-content: space-between; 
+}
+/* #list_item{
+    position: relative;
+}
+#list-grup .list_div-right{
+    position: absolute;
+    top: 3px;
+    left: 620px;
+    width: 49%;
+}
+#list-grup .list_div-right li{
+    list-style: none;
+} */
+#list-grup .list_div .list_div ul{
+    margin: 10px;
+}
+#list-grup .list_div ul li{
+    list-style: none;
+}
+#list-grup .list_div h2 p{
+    text-align: left;
+}
+/* -----Form Part starts here----- */
+
+
+ #contact{
+    width: 60%;
+    
+    margin: 10px auto;
+    padding: 5%;
+    border: 1px solid black;
+    background-color: #9c88ff;
+}
+#contact .form-title {
+    text-align: center;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+#contact .form-desc{
+    margin: 10px 2px;
+}
+#contact .child_div{
+    margin: 10px 0;
+
+}
+ label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+#contact input{
+    padding: 10px 0 10px 5px;
+    width: 98%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+   
+}
+ textarea{
+    width: 98%;
+}
+input[type='button']{
+    width: 40%;
+    margin: 2px auto;
+    background-color: gold;
+    border-top-left-radius: 3%;
+    /* border-top-left-radius: 15px; */
+}
+input:hover[type='button']{
+    background-color: #0b6b20;
+    color: #ddd;
+}
+/* ----The main parts ends here--- */
+
+
+
+/* Foter Parts starts here */
+#footer{
+    background-color: rgb(8, 8, 51);
+    color: white;
+    margin-top: 15px;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+}
+#footer h3{
+    margin-bottom: 10px;
+}
+#footer p{
+    width: 60%;
+    margin: 2px auto;
+}
+#footer .fa-brands{
+    margin: 20px;
+    padding: 15px;
+    background-color: #1919d1;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    color: #ddd;
+}
+#footer .fa-brands:first-child{
+    background-color: #1919d1;
+}
+
+
